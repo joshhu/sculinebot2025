@@ -42,7 +42,7 @@ google_search_tool = Tool(
 )
 
 chat = client.chats.create(
-    model="gemini-2.5-pro-preview-05-06",
+    model="gemini-2.0-flash",
     config=GenerateContentConfig(
         system_instruction="你是一個中文的AI助手，請用繁體中文回答",
         tools=[google_search_tool],
